@@ -1,5 +1,4 @@
-# Redux Todos Practice Example With Delete Function
-## *update: use local storage to persist state when browser page refresh and [uuid](https://github.com/kelektiv/node-uuid) to generate todo id
+# Redux Advanced Example With Reddit API Call
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
 
