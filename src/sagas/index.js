@@ -16,7 +16,6 @@ export function fetchPostsApi(reddit) {
 export function* fetchPosts(reddit) {
   yield put(actions.requestPosts(reddit))
   const posts = yield call(fetchPostsApi, reddit)
-  console.log('posts', posts)
   yield put(actions.receivePosts(reddit, posts))
 }
 

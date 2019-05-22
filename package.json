@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.0.0",
+    "redux-devtools-extension": "^2.13.8"
   },
   "dependencies": {
     "axios": "^0.18.0",
