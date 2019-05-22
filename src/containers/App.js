@@ -39,7 +39,7 @@ class App extends React.Component {
             </span>
           )}
           {!isFetching && (
-            <a href="#" onClick={this.handleRefreshClick}>
+            <a href={selfHrefTarget} onClick={this.handleRefreshClick}>
               Refresh
             </a>
           )}
