@@ -21,8 +21,8 @@ export function* fetchPosts(reddit) {
 
 export function* invalidateReddit() {
   while (true) {
-    const { reddit } = yield take(actions.INVALIDATE_SUBREDDIT)
-    yield call(fetchPosts, reddit)
+    const { subreddit } = yield take(actions.INVALIDATE_SUBREDDIT)
+    yield call(fetchPosts, subreddit)
   }
 }
 
