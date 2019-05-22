@@ -39,7 +39,7 @@ function postsByReddit(state = {}, action) {
     case RECEIVE_POSTS:
       return {
         ...state,
-        [action.reddit]: posts(state[action.reddit], action)
+        [action.subreddit]: posts(state[action.subreddit], action)
       }
     default:
       return state
