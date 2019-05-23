@@ -13,6 +13,7 @@ class App extends React.Component {
   }
 
   handleChange(nextReddit) {
+    console.log('handleChange')
     this.props.dispatch(selectSubreddit(nextReddit))
   }
 
@@ -23,7 +24,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { selectedReddit, posts, isFetching, lastUpdated } = this.props
+    const {
+      selectedReddit = 'reactjs',
+      posts = [],
+      isFetching = false,
+      lastUpdated
+    } = this.props
     const selfHrefTarget = '#'
     return (
       <div>

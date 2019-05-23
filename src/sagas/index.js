@@ -11,6 +11,7 @@ export function fetchPostsApi(reddit) {
     .get(`https://www.reddit.com/r/${reddit}.json`)
     .then(response => response.data)
     .then(json => json.data.children.map(child => child.data))
+    .catch(err => console.log('A fetch err occurs: ', err))
 }
 
 export function* fetchPosts(reddit) {
