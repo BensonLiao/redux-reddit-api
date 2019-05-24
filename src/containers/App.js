@@ -13,7 +13,6 @@ class App extends React.Component {
   }
 
   handleChange(nextReddit) {
-    console.log('handleChange')
     this.props.dispatch(selectSubreddit(nextReddit))
   }
 
