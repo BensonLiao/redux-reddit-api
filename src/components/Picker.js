@@ -18,7 +18,7 @@ export default class Picker extends Component {
           onClick={e => (e.target.value = '')}
         />
         {/* note. datalist are not supported on some browser */}
-        {/* ref: https://caniuse.com/#feat=datalist */}
+        {/* ref: https://caniuse.com/#search=datalist */}
         {/* if in production, it should be handle properly with detect or fallback */}
         <datalist id={datalistId}>
           {options.map(option => (
